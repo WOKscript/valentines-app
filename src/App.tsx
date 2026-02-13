@@ -48,7 +48,7 @@ const SparklingBackground = () => {
   )
 }
 
-// Hero Section
+// Hero Section (UPDATED intro text to relate to your letter)
 const HeroSection = () => {
   const heroRef = useRef<HTMLDivElement>(null)
   const titleRef = useRef<HTMLHeadingElement>(null)
@@ -152,7 +152,9 @@ const HeroSection = () => {
       <div className="relative z-20 text-center px-4 max-w-4xl mx-auto">
         <div className="flex items-center justify-center gap-3 mb-6">
           <Sparkles className="w-5 h-5 text-[#d4a017] animate-pulse-gentle" />
-          <span className="font-body text-[#8b6914] font-medium tracking-[0.2em] uppercase text-xs">February 14th</span>
+          <span className="font-body text-[#8b6914] font-medium tracking-[0.2em] uppercase text-xs">
+            For Mommy — February 14th
+          </span>
           <Sparkles className="w-5 h-5 text-[#d4a017] animate-pulse-gentle" />
         </div>
 
@@ -163,11 +165,11 @@ const HeroSection = () => {
         <div className="section-divider" />
 
         <p ref={subtitleRef} className="font-body text-lg md:text-xl text-[#8b6914] mb-3 font-light italic">
-          To the one who makes my heart bloom
+          Yung night na sinabi mo “wag na mag-court, boyfriend na kita” became my favorite beginning.
         </p>
 
         <p className="font-body text-sm md:text-base text-[#a08030] mb-12 max-w-lg mx-auto leading-relaxed">
-          Like a tulip in spring, our love grows more beautiful with each passing day.
+          This Valentine’s, I just want more travels, more kain, more clingy moments, and more us. We fight, we fix, and we stay.
         </p>
 
         <button ref={ctaRef} onClick={handleSendLove} className="magnetic-button btn-elegant flex items-center gap-3 mx-auto">
