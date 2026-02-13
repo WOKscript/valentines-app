@@ -1,0 +1,96 @@
+/* App-specific styles for Modern Professional Yellow Tulip Theme */
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fcf9f0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #f4c430, #d4a017);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #d4a017, #b8860b);
+}
+
+/* Selection color */
+::selection {
+  background: #f4c430;
+  color: #fff;
+}
+
+/* Ensure images don't overflow */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Prevent horizontal scroll */
+body {
+  overflow-x: hidden;
+}
+
+/* Modern heading styles */
+h1, h2, h3 {
+  font-weight: 400;
+}
+
+/* Elegant link hover effect */
+a {
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #d4a017;
+}
+
+/* Focus styles for accessibility */
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid #d4a017;
+  outline-offset: 2px;
+}
+
+/* Smooth image loading */
+img {
+  transition: opacity 0.3s ease;
+}
+
+img[src=""] {
+  opacity: 0;
+}
+
+/* Animation delays for sparkle */
+.delay-100 {
+  animation-delay: 0.1s;
+}
+
+.delay-200 {
+  animation-delay: 0.2s;
+}
+
+/* Lightbox animation */
+@keyframes lightbox-fade {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-lightbox {
+  animation: lightbox-fade 0.3s ease-out;
+}
